@@ -11,11 +11,28 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="./assets/logokepçe.jpeg">
     <title>Bağoğlu Hafriyat - Ankara Hafriyat, Kanal Kazısı, Kırım, Drenaj ve İş Makinesi Kiralama</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Preconnect to external resources for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" as="style">
+    
+    <!-- Stylesheets with optimized loading -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    </noscript>
+    
+    <!-- Noscript fallback for Font Awesome -->
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
     
     <!-- Schema.org Markup -->
     <script type="application/ld+json">
@@ -64,7 +81,7 @@
     <header class="header" id="header">
         <nav class="navbar container">
             <div class="nav-brand">
-                <img src="./assets/logo.png" alt="Bağoğlu Hafriyat Logo" class="logo">
+                <img src="./assets/logo.png" alt="Bağoğlu Hafriyat Logo" class="logo" width="70" height="70">
                 <div class="brand-text">
                     <h2>Bağoğlu<br>Hafriyat</h2>
                 </div>
@@ -100,7 +117,7 @@
     <!-- Hero Section -->
     <section class="hero" id="anasayfa">
         <div class="hero-bg">
-            <img src="./assets/kep.jpeg" alt="Bağoğlu Hafriyat İş Makineleri" class="hero-image">
+            <img src="./assets/kep.jpeg" alt="Bağoğlu Hafriyat İş Makineleri" class="hero-image" loading="eager" fetchpriority="high">
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content container">
@@ -322,7 +339,7 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-image">
-                    <img src="./assets/kep1.jpeg" alt="Bağoğlu Hafriyat Hakkında" class="main-img">
+                    <img src="./assets/kep1.jpeg" alt="Bağoğlu Hafriyat Hakkında" class="main-img" loading="lazy">
                     <div class="about-badge">
                         <span class="badge-number">25+</span>
                         <span class="badge-text">Yıllık<br>Deneyim</span>
@@ -547,7 +564,7 @@
             <div class="references-grid">
                 <div class="reference-card">
                     <div class="reference-image">
-                        <img src="./assets/kep6.jpeg" alt="Proje 1">
+                        <img src="./assets/kep6.jpeg" alt="Proje 1" loading="lazy" width="400" height="300">
                         <div class="reference-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
@@ -559,7 +576,7 @@
                 </div>
                 <div class="reference-card">
                     <div class="reference-image">
-                        <img src="./assets/kep1.jpeg" alt="Proje 2">
+                        <img src="./assets/kep1.jpeg" alt="Proje 2" loading="lazy" width="400" height="300">
                         <div class="reference-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
@@ -571,7 +588,7 @@
                 </div>
                 <div class="reference-card">
                     <div class="reference-image">
-                        <img src="./assets/kep2.jpeg" alt="Proje 3">
+                        <img src="./assets/kep2.jpeg" alt="Proje 3" loading="lazy" width="400" height="300">
                         <div class="reference-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
@@ -583,7 +600,7 @@
                 </div>
                 <div class="reference-card">
                     <div class="reference-image">
-                        <img src="./assets/kep3.jpeg" alt="Proje 4">
+                        <img src="./assets/kep3.jpeg" alt="Proje 4" loading="lazy" width="400" height="300">
                         <div class="reference-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
@@ -595,7 +612,7 @@
                 </div>
                 <div class="reference-card">
                     <div class="reference-image">
-                        <img src="./assets/kep4.jpeg" alt="Proje 5">
+                        <img src="./assets/kep4.jpeg" alt="Proje 5" loading="lazy" width="400" height="300">
                         <div class="reference-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
@@ -607,7 +624,7 @@
                 </div>
                 <div class="reference-card">
                     <div class="reference-image">
-                        <img src="./assets/kep5.jpeg" alt="Proje 6">
+                        <img src="./assets/kep5.jpeg" alt="Proje 6" loading="lazy" width="400" height="300">
                         <div class="reference-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
@@ -881,7 +898,8 @@
                             style="border:0;" 
                             allowfullscreen="" 
                             loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Bağoğlu Hafriyat Lokasyon Haritası">
                         </iframe>
                     </div>
                     <div class="working-hours">
@@ -901,7 +919,7 @@
             <div class="footer-content">
                 <div class="footer-col">
                     <div class="footer-brand">
-                        <img src="./assets/logo.png" alt="Bağoğlu Hafriyat" class="footer-logo">
+                        <img src="./assets/logo.png" alt="Bağoğlu Hafriyat" class="footer-logo" loading="lazy" width="50" height="50">
                         <h3>Bağoğlu Hafriyat</h3>
                     </div>
                     <p class="footer-desc">2000 yılından beri Ankara'da güvenilir hafriyat, iş makinesi kiralama ve inşaat hizmetleri sunuyoruz.</p>
@@ -989,7 +1007,7 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
 
