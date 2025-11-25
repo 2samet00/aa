@@ -351,38 +351,9 @@ function initScrollToTop() {
 
 // ===== Scroll Animations =====
 function initScrollAnimations() {
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
-    };
-    
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, observerOptions);
-    
-    // Elements to animate
-    const animatedElements = document.querySelectorAll(`
-        .service-card,
-        .why-card,
-        .fleet-card-simple,
-        .reference-card,
-        .faq-item,
-        .contact-card
-    `);
-    
-    animatedElements.forEach((element, index) => {
-        element.style.opacity = '0';
-        element.style.transform = 'translateY(30px)';
-        element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        element.style.transitionDelay = `${index * 0.05}s`;
-        
-        observer.observe(element);
-    });
+    // Animasyonlar devre dışı bırakıldı - daha hızlı sayfa yükleme için
+    // İsteğe bağlı olarak etkinleştirilebilir
+    return;
 }
 
 // ===== Theme Toggle (Dark/Light Mode) =====
