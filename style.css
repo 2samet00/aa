@@ -201,13 +201,13 @@ section {
 }
 
 .logo {
-    width: 90px;
-    height: 90px;
+    width: 55px;
+    height: 55px;
     object-fit: contain;
 }
 
 .brand-text h2 {
-    font-size: 1.65rem;
+    font-size: 1.4rem;
     line-height: 1.2;
     color: var(--primary-color);
     font-weight: 700;
@@ -1415,12 +1415,12 @@ section {
 
 @media (max-width: 768px) {
     .logo {
-        width: 70px;
-        height: 70px;
+        width: 45px;
+        height: 45px;
     }
     
     .brand-text h2 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     
     .navbar.container {
@@ -1600,6 +1600,33 @@ section {
 
 [data-theme="dark"] .brand-text h2 {
     color: #FF6B00;
+}
+
+[data-theme="dark"] .why-card {
+    background: #1A1A2E;
+    border-color: #3D3D54;
+}
+
+[data-theme="dark"] .why-card:hover {
+    background: #2D2D44;
+    border-color: #FF6B00;
+}
+
+[data-theme="dark"] .why-card h3 {
+    color: #FFFFFF;
+}
+
+[data-theme="dark"] .why-card p {
+    color: #B8B8C8;
+}
+
+[data-theme="dark"] .why-us {
+    background: #0F0F1E;
+}
+
+[data-theme="dark"] .why-us .section-title,
+[data-theme="dark"] .why-us .section-desc {
+    color: #E8E8ED;
 }
 
 [data-theme="dark"] .nav-link {
