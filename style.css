@@ -187,10 +187,12 @@ section {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: var(--spacing-sm) 0;
     gap: var(--spacing-md);
     max-width: 100%;
+    width: 100%;
+    position: relative;
 }
 
 .nav-brand {
@@ -198,16 +200,18 @@ section {
     align-items: center;
     gap: var(--spacing-md);
     flex-shrink: 0;
+    position: absolute;
+    left: 280px;
 }
 
 .logo {
-    width: 55px;
-    height: 55px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
 }
 
 .brand-text h2 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.2;
     color: var(--primary-color);
     font-weight: 700;
@@ -218,6 +222,7 @@ section {
     list-style: none;
     gap: var(--spacing-lg);
     align-items: center;
+    background: transparent;
 }
 
 .nav-link {
@@ -247,7 +252,8 @@ section {
     display: flex;
     gap: var(--spacing-sm);
     align-items: center;
-    margin-left: auto;
+    position: absolute;
+    right: 280px;
 }
 
 .theme-toggle {
@@ -1413,14 +1419,34 @@ section {
     }
 }
 
+/* Orta boyutlu ekranlar için */
+@media (max-width: 1200px) {
+    .nav-brand {
+        left: 120px;
+    }
+    
+    .nav-cta {
+        right: 120px;
+    }
+}
+
 @media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+    
+    .nav-brand {
+        position: static;
+        left: auto;
+    }
+    
     .logo {
-        width: 45px;
-        height: 45px;
+        width: 55px;
+        height: 55px;
     }
     
     .brand-text h2 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     
     .navbar.container {
@@ -1668,14 +1694,17 @@ section {
     background: #E8E8ED;
 }
 
-[data-theme="dark"] .nav-menu {
-    background: #0F0F1E;
-    border-right: 1px solid #3D3D54;
-}
-
 [data-theme="dark"] .header {
     background: #1A1A2E;
     border-bottom: 1px solid #3D3D54;
+}
+
+/* Koyu temada mobile menü için arka plan */
+@media (max-width: 768px) {
+    [data-theme="dark"] .nav-menu {
+        background: #0F0F1E;
+        border-right: 1px solid #3D3D54;
+    }
 }
 
 /* ===== Utility Classes ===== */

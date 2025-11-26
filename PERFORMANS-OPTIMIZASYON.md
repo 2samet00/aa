@@ -439,3 +439,5 @@ Yapılan optimizasyonlar ile sitenizin yükleme hızı **%60-70 oranında iyile�
 *Son güncelleme: 25 Kasım 2024*  
 *Bağoğlu Hafriyat - Performans Optimizasyon Dokümantasyonu v1.0*
 
+
+

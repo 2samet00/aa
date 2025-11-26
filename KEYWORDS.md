@@ -232,3 +232,5 @@
 **Son Güncelleme:** 25 Kasım 2024
 **Hazırlayan:** Bağoğlu Hafriyat SEO Optimizasyon Projesi
 
+
+

@@ -15,3 +15,5 @@ Sitemap: https://www.bagogluhafriyat.com/sitemap.xml
 # Crawl delay (isteğe bağlı - saniye cinsinden)
 # Crawl-delay: 10
 
+
+
