@@ -2,6 +2,9 @@
   "name": "bagoglu-hafriyat",
   "version": "1.0.0",
   "description": "Bağoğlu Hafriyat Kurumsal Web Sitesi - Statik HTML",
+  "scripts": {
+    "build": "echo 'Static HTML - No build required'"
+  },
   "keywords": [
     "hafriyat",
     "ankara",
