@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Bağoğlu Hafriyat Kurumsal Web Sitesi",
   "scripts": {
-    "build": "mkdir -p dist && cp -r *.html *.css *.js *.md *.txt *.xml *.jsonc assets dist/ 2>/dev/null || true",
+    "build": "echo 'Static HTML site ready for deployment'",
     "deploy": "echo 'Deploying to Cloudflare Pages...'"
   },
   "keywords": [
