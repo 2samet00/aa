@@ -1,0 +1,14 @@
+# Redirects for Cloudflare Pages
+
+# Trailing slash redirects
+/hakkimizda /hakkimizda.html 200
+/hizmetler /hizmetler.html 200
+/iletisim /iletisim.html 200
+/beko-loder-kiralama /beko-loder-kiralama.html 200
+/mini-kepce-kiralama /mini-kepce-kiralama.html 200
+/ekskavotor-kiralama /ekskavotor-kiralama.html 200
+/kamyon-kiralama /kamyon-kiralama.html 200
+
+# 404 fallback
+/* /index.html 200
+
