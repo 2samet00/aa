@@ -1,0 +1,19 @@
+{
+  "name": "bagoglu-hafriyat",
+  "version": "1.0.0",
+  "description": "Bağoğlu Hafriyat Kurumsal Web Sitesi",
+  "scripts": {
+    "build": "echo 'Static HTML site - no build process required'",
+    "deploy": "echo 'Deploying to Cloudflare Pages...'"
+  },
+  "keywords": [
+    "hafriyat",
+    "ankara",
+    "kepce-kiralama",
+    "is-makinesi"
+  ],
+  "author": "Bağoğlu Hafriyat",
+  "license": "UNLICENSED",
+  "private": true
+}
+
