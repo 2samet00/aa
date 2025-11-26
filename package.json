@@ -1,11 +1,7 @@
 {
   "name": "bagoglu-hafriyat",
   "version": "1.0.0",
-  "description": "Bağoğlu Hafriyat Kurumsal Web Sitesi",
-  "scripts": {
-    "build": "echo 'Static HTML site ready for deployment'",
-    "deploy": "echo 'Deploying to Cloudflare Pages...'"
-  },
+  "description": "Bağoğlu Hafriyat Kurumsal Web Sitesi - Statik HTML",
   "keywords": [
     "hafriyat",
     "ankara",
