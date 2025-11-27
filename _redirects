@@ -1,6 +1,6 @@
-# Redirects for Cloudflare Pages
+# Redirects for Cloudflare Workers Static Assets
 
-# Trailing slash redirects
+# Clean URL redirects - without trailing slash
 /hakkimizda /hakkimizda.html 200
 /hizmetler /hizmetler.html 200
 /iletisim /iletisim.html 200
@@ -8,9 +8,6 @@
 /mini-kepce-kiralama /mini-kepce-kiralama.html 200
 /ekskavotor-kiralama /ekskavotor-kiralama.html 200
 /kamyon-kiralama /kamyon-kiralama.html 200
-
-# 404 fallback
-/* /index.html 200
 
 
 
