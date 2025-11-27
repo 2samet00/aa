@@ -473,46 +473,6 @@ section {
     font-size: 0.95rem;
 }
 
-/* Hero Phone Numbers - Top Right */
-.hero-phones {
-    position: absolute;
-    top: 120px;
-    right: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    z-index: 10;
-}
-
-.hero-phone-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.6rem 1.2rem;
-    background: rgba(255, 85, 0, 0.95);
-    color: #FFFFFF;
-    text-decoration: none;
-    border-radius: 30px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 85, 0, 0.4);
-    border: 2px solid rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(10px);
-}
-
-.hero-phone-link:hover {
-    transform: translateY(-2px);
-    background: rgba(255, 85, 0, 1);
-    box-shadow: 0 6px 20px rgba(255, 85, 0, 0.6);
-    border-color: rgba(255, 255, 255, 0.6);
-}
-
-.hero-phone-link i {
-    font-size: 0.85rem;
-    animation: phoneRing 2s ease-in-out infinite;
-}
-
 @keyframes phoneRing {
     0%, 100% {
         transform: rotate(0deg) scale(1);
@@ -1473,16 +1433,6 @@ section {
     .hero-stats {
         gap: var(--spacing-md);
     }
-    
-    .hero-phones {
-        top: 100px;
-        right: 30px;
-    }
-    
-    .hero-phone-link {
-        padding: 0.5rem 1rem;
-        font-size: 0.85rem;
-    }
 }
 
 /* Orta boyutlu ekranlar için */
@@ -1636,29 +1586,6 @@ section {
     
     .stat h3 {
         font-size: 2rem;
-    }
-    
-    .hero-phones {
-        position: relative;
-        top: auto;
-        right: auto;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 2rem;
-        gap: 0.6rem;
-        padding: 0 1rem;
-    }
-    
-    .hero-phone-link {
-        padding: 0.5rem 0.9rem;
-        font-size: 0.8rem;
-        flex: 1;
-        justify-content: center;
-        max-width: 180px;
-    }
-    
-    .hero-phone-link i {
-        font-size: 0.8rem;
     }
     
     .services-grid,
@@ -1911,20 +1838,6 @@ section {
     
     .stat {
         flex: 0 1 auto;
-    }
-    
-    .hero-phones {
-        top: 90px;
-        right: 25px;
-    }
-    
-    .hero-phone-link {
-        padding: 0.55rem 1.1rem;
-        font-size: 0.85rem;
-    }
-    
-    .hero-phone-link i {
-        font-size: 0.8rem;
     }
     
     /* İletişim kartları tablet için */
