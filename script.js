@@ -224,18 +224,11 @@ Merhaba, yukarıdaki bilgiler için fiyat teklifi almak istiyorum.
         // Show success notification
         showNotification('WhatsApp\'a yönlendiriliyorsunuz...', 'success');
         
-        // Open WhatsApp
+        // Redirect to WhatsApp directly (avoids popup blockers)
         setTimeout(function() {
-            window.open(whatsappURL, '_blank');
-            
-            // Reset form
-            form.reset();
-            
-            // Re-enable submit button
-            if (submitBtn) {
-                submitBtn.disabled = false;
-            }
-        }, 1000);
+            // Use location.href instead of window.open to avoid popup blockers
+            window.location.href = whatsappURL;
+        }, 500);
     });
 }
 
