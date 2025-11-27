@@ -1707,6 +1707,104 @@ section {
     }
 }
 
+/* ===== Tablet & iPad Optimizations ===== */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Tablet için container genişliği */
+    .container {
+        max-width: 90%;
+    }
+    
+    /* Grid yapıları tablet için optimize */
+    .services-grid,
+    .fleet-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    /* Hero section tablet için */
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    /* İletişim kartları tablet için */
+    .contact-card {
+        padding: 1.5rem;
+    }
+    
+    /* Navigation optimizasyonu */
+    .nav-menu {
+        gap: 1rem;
+    }
+    
+    .nav-link {
+        font-size: 0.95rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    /* Footer tablet için */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* iPad Pro ve büyük tabletler için */
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .container {
+        max-width: 95%;
+    }
+    
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Landscape tablet optimizasyonu */
+@media (max-width: 1024px) and (orientation: landscape) {
+    .hero {
+        min-height: 80vh;
+    }
+    
+    .hero-content {
+        padding: 3rem 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Touch device optimizasyonları */
+@media (hover: none) and (pointer: coarse) {
+    /* Mobil ve tablet dokunmatik cihazlar için */
+    .btn,
+    .nav-link,
+    .service-card,
+    .contact-card {
+        min-height: 44px; /* Apple'ın önerdiği minimum dokunma alanı */
+        min-width: 44px;
+    }
+    
+    .btn {
+        padding: 0.9rem 2rem;
+    }
+    
+    /* Hover efektlerini kaldır, sadece aktif durumlar */
+    .service-card:hover,
+    .fleet-card:hover {
+        transform: none;
+    }
+    
+    .service-card:active,
+    .fleet-card:active {
+        transform: scale(0.98);
+    }
+}
+
 /* ===== Utility Classes ===== */
 .text-center { text-align: center; }
 .text-left { text-align: left; }

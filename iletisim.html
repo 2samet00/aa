@@ -80,7 +80,7 @@
 
     <section class="contact" style="padding: 4rem 0;">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
                 <div class="contact-card">
                     <div class="contact-icon"><i class="fas fa-phone"></i></div>
                     <h3>Telefon</h3>
@@ -104,96 +104,56 @@
                 </div>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
-                <div>
-                    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Mesaj Gönderin</h2>
-                    <p style="color: var(--text-gray); margin-bottom: 2rem;">Proje detaylarınızı bizimle paylaşın, size en uygun çözümü sunalım.</p>
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Ad Soyad *</label>
-                            <input type="text" id="name" name="name" required>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto;">
+                <div style="background: var(--bg-light); padding: 2rem; border-radius: var(--radius-lg);">
+                    <h3 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+                        <i class="fas fa-clock" style="color: var(--primary-color);"></i>
+                        Çalışma Saatleri
+                    </h3>
+                    <div class="working-hours">
+                        <div class="hours-row">
+                            <span>Hafta İçi</span>
+                            <span>7/24 Hizmetinizdeyiz</span>
                         </div>
-                        <div class="form-group">
-                            <label for="phone">Telefon *</label>
-                            <input type="tel" id="phone" name="phone" required>
+                        <div class="hours-row">
+                            <span>Hafta Sonu</span>
+                            <span>7/24 Hizmetinizdeyiz</span>
                         </div>
-                        <div class="form-group">
-                            <label for="email">E-posta</label>
-                            <input type="email" id="email" name="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Hizmet Türü *</label>
-                            <select id="service" name="service" required>
-                                <option value="">Seçiniz</option>
-                                <option value="beko-loder">Beko Loder Kiralama</option>
-                                <option value="mini-kepce">Mini Kepçe 1CX Kiralama</option>
-                                <option value="ekskavotor">Ekskavatör Kiralama</option>
-                                <option value="kamyon">Kamyon Kiralama</option>
-                                <option value="kanal-kazisi">Kanal Kazısı</option>
-                                <option value="kirim">Kırım</option>
-                                <option value="drenaj">Drenaj İşlemleri</option>
-                                <option value="diger">Diğer</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mesajınız *</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Mesaj Gönder <i class="fas fa-paper-plane"></i></button>
-                    </form>
+                    </div>
+                    <p style="margin-top: 1.5rem; color: var(--text-gray); font-size: 0.95rem;">
+                        <i class="fas fa-info-circle" style="color: var(--primary-color);"></i>
+                        Acil durumlarda 7/24 ulaşabilirsiniz
+                    </p>
                 </div>
 
-                <div>
-                    <div style="background: var(--bg-light); padding: 2rem; border-radius: var(--radius-lg); margin-bottom: 2rem;">
-                        <h3 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem;">
-                            <i class="fas fa-clock" style="color: var(--primary-color);"></i>
-                            Çalışma Saatleri
-                        </h3>
-                        <div class="working-hours">
-                            <div class="hours-row">
-                                <span>Hafta İçi</span>
-                                <span>7/24 Hizmetinizdeyiz</span>
-                            </div>
-                            <div class="hours-row">
-                                <span>Hafta Sonu</span>
-                                <span>7/24 Hizmetinizdeyiz</span>
-                            </div>
-                        </div>
-                        <p style="margin-top: 1.5rem; color: var(--text-gray); font-size: 0.95rem;">
-                            <i class="fas fa-info-circle" style="color: var(--primary-color);"></i>
-                            Acil durumlarda 7/24 ulaşabilirsiniz
-                        </p>
-                    </div>
-
-                    <div style="background: var(--bg-light); padding: 2rem; border-radius: var(--radius-lg);">
-                        <h3 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem;">
-                            <i class="fas fa-map-marked-alt" style="color: var(--primary-color);"></i>
-                            Hizmet Bölgeleri
-                        </h3>
-                        <ul style="display: grid; gap: 0.7rem;">
-                            <li style="display: flex; align-items: center; gap: 0.5rem;">
-                                <i class="fas fa-check" style="color: var(--success-color);"></i> Eryaman
-                            </li>
-                            <li style="display: flex; align-items: center; gap: 0.5rem;">
-                                <i class="fas fa-check" style="color: var(--success-color);"></i> Etimesgut
-                            </li>
-                            <li style="display: flex; align-items: center; gap: 0.5rem;">
-                                <i class="fas fa-check" style="color: var(--success-color);"></i> Sincan
-                            </li>
-                            <li style="display: flex; align-items: center; gap: 0.5rem;">
-                                <i class="fas fa-check" style="color: var(--success-color);"></i> Yenimahalle
-                            </li>
-                            <li style="display: flex; align-items: center; gap: 0.5rem;">
-                                <i class="fas fa-check" style="color: var(--success-color);"></i> Keçiören
-                            </li>
-                            <li style="display: flex; align-items: center; gap: 0.5rem;">
-                                <i class="fas fa-check" style="color: var(--success-color);"></i> Çankaya
-                            </li>
-                            <li style="display: flex; align-items: center; gap: 0.5rem;">
-                                <i class="fas fa-check" style="color: var(--success-color);"></i> Ankara Geneli
-                            </li>
-                        </ul>
-                    </div>
+                <div style="background: var(--bg-light); padding: 2rem; border-radius: var(--radius-lg);">
+                    <h3 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+                        <i class="fas fa-map-marked-alt" style="color: var(--primary-color);"></i>
+                        Hizmet Bölgeleri
+                    </h3>
+                    <ul style="display: grid; gap: 0.7rem;">
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--success-color);"></i> Eryaman
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--success-color);"></i> Etimesgut
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--success-color);"></i> Sincan
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--success-color);"></i> Yenimahalle
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--success-color);"></i> Keçiören
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--success-color);"></i> Çankaya
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-check" style="color: var(--success-color);"></i> Ankara Geneli
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
