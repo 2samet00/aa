@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Bağoğlu Hafriyat Kurumsal Web Sitesi - Statik HTML",
   "scripts": {
-    "build": "mkdir -p public && cp -r *.html *.css *.js *.txt *.xml assets _headers _redirects public/ 2>/dev/null || true"
+    "build": "mkdir -p public && cp *.html *.css script.js *.txt *.xml public/ 2>/dev/null && cp -r assets public/ 2>/dev/null && cp _headers public/ 2>/dev/null || true"
   },
   "keywords": [
     "hafriyat",
