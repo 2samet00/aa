@@ -1496,22 +1496,31 @@ section {
     }
     
     .nav-cta {
-        position: static;
+        position: static !important;
         display: flex !important;
         gap: 0.5rem;
         margin-left: auto;
         margin-right: 0.5rem;
-        visibility: visible;
-        opacity: 1;
+        visibility: visible !important;
+        opacity: 1 !important;
         z-index: 100;
     }
     
     .nav-cta .btn {
-        display: flex !important;
+        display: inline-flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
         padding: 0.5rem 0.8rem;
         font-size: 0.75rem;
         align-items: center;
         white-space: nowrap;
+    }
+    
+    .nav-cta .btn-phone,
+    .nav-cta .btn-whatsapp {
+        display: inline-flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
     }
     
     .nav-cta .btn i {
@@ -1523,6 +1532,8 @@ section {
         width: 36px;
         height: 36px;
         display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
     }
     
     .hero-buttons {
@@ -1593,11 +1604,21 @@ section {
     /* Nav CTA buttons küçük ekranlar için */
     .nav-cta {
         gap: 0.4rem;
+        display: flex !important;
+        visibility: visible !important;
     }
     
     .nav-cta .btn {
         padding: 0.45rem 0.7rem;
         font-size: 0.75rem;
+        display: inline-flex !important;
+        visibility: visible !important;
+    }
+    
+    .nav-cta .btn-phone,
+    .nav-cta .btn-whatsapp {
+        display: inline-flex !important;
+        visibility: visible !important;
     }
     
     .nav-cta .btn i {
@@ -1609,6 +1630,8 @@ section {
         width: 34px;
         height: 34px;
         font-size: 0.8rem;
+        display: flex !important;
+        visibility: visible !important;
     }
     
     .hero-stats {
@@ -1835,11 +1858,21 @@ section {
     /* CTA buttons tablet için */
     .nav-cta {
         gap: 0.5rem;
+        display: flex !important;
+        visibility: visible !important;
     }
     
     .nav-cta .btn {
         padding: 0.6rem 1rem;
         font-size: 0.85rem;
+        display: inline-flex !important;
+        visibility: visible !important;
+    }
+    
+    .nav-cta .btn-phone,
+    .nav-cta .btn-whatsapp {
+        display: inline-flex !important;
+        visibility: visible !important;
     }
     
     .nav-cta .btn i {
@@ -1850,6 +1883,8 @@ section {
         width: 38px;
         height: 38px;
         font-size: 0.9rem;
+        display: flex !important;
+        visibility: visible !important;
     }
     
     /* Grid yapıları tablet için optimize */
