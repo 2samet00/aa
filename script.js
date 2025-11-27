@@ -42,24 +42,22 @@ function initMobileMenu() {
     const navLinks = document.querySelectorAll('.nav-link');
     
     if (hamburger && navMenu) {
-        hamburger.addEventListener('click', function() {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
+        // Toggle menu on hamburger click
+        hamburger.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const isActive = hamburger.classList.contains('active');
             
-            // Prevent body scroll when menu is open
-            if (navMenu.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
+            if (isActive) {
+                closeMenu();
             } else {
-                document.body.style.overflow = '';
+                openMenu();
             }
         });
         
         // Close menu when clicking on a nav link
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-                document.body.style.overflow = '';
+                closeMenu();
             });
         });
         
@@ -69,11 +67,22 @@ function initMobileMenu() {
             const isClickOnHamburger = hamburger.contains(event.target);
             
             if (!isClickInsideMenu && !isClickOnHamburger && navMenu.classList.contains('active')) {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-                document.body.style.overflow = '';
+                closeMenu();
             }
         });
+        
+        // Helper functions
+        function openMenu() {
+            hamburger.classList.add('active');
+            navMenu.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMenu() {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
     }
 }
 
