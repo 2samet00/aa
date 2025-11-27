@@ -473,42 +473,40 @@ section {
     font-size: 0.95rem;
 }
 
-/* Hero Contact Phones - Simple & Elegant */
-.hero-contact-phones {
+/* Mobile Phone Numbers - Navbar */
+.mobile-phones {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mobile-phone-link {
     display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-}
-
-.hero-phone-simple {
-    display: inline-flex;
     align-items: center;
-    gap: 0.6rem;
-    padding: 0.7rem 1.5rem;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 30px;
-    color: #FFFFFF;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 50%;
     text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    letter-spacing: 0.3px;
-}
-
-.hero-phone-simple:hover {
-    background: rgba(255, 107, 0, 0.9);
-    border-color: rgba(255, 107, 0, 1);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(255, 107, 0, 0.4);
-}
-
-.hero-phone-simple i {
     font-size: 0.85rem;
-    opacity: 0.9;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(255, 107, 0, 0.3);
+}
+
+.mobile-phone-link:hover {
+    background: var(--primary-dark);
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(255, 107, 0, 0.5);
+}
+
+.mobile-phone-link i {
+    animation: phoneRing 2s ease-in-out infinite;
 }
 
 @keyframes phoneRing {
@@ -1626,19 +1624,15 @@ section {
         font-size: 2rem;
     }
     
-    .hero-contact-phones {
-        flex-direction: column;
-        gap: 0.8rem;
-        margin-top: 1.5rem;
+    /* Show mobile phones on mobile devices */
+    .mobile-phones {
+        display: flex;
     }
     
-    .hero-phone-simple {
-        width: 100%;
-        max-width: 280px;
-        margin: 0 auto;
-        justify-content: center;
-        font-size: 0.9rem;
-        padding: 0.65rem 1.2rem;
+    .mobile-phone-link {
+        width: 34px;
+        height: 34px;
+        font-size: 0.8rem;
     }
     
     .services-grid,
@@ -1807,6 +1801,16 @@ section {
     border-bottom: 1px solid #3D3D54;
 }
 
+[data-theme="dark"] .mobile-phone-link {
+    background: var(--primary-color);
+    box-shadow: 0 2px 8px rgba(255, 107, 0, 0.4);
+}
+
+[data-theme="dark"] .mobile-phone-link:hover {
+    background: var(--primary-dark);
+    box-shadow: 0 4px 12px rgba(255, 107, 0, 0.6);
+}
+
 /* Koyu temada mobile menü için arka plan */
 @media (max-width: 768px) {
     [data-theme="dark"] .nav-menu {
@@ -1893,14 +1897,15 @@ section {
         flex: 0 1 auto;
     }
     
-    .hero-contact-phones {
-        gap: 1.2rem;
-        margin-top: 1.8rem;
+    /* Show mobile phones on tablet */
+    .mobile-phones {
+        display: flex;
+        right: 70px;
     }
     
-    .hero-phone-simple {
-        font-size: 0.9rem;
-        padding: 0.65rem 1.3rem;
+    .mobile-phone-link {
+        width: 38px;
+        height: 38px;
     }
     
     /* İletişim kartları tablet için */
