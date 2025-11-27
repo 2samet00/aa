@@ -472,6 +472,48 @@ section {
     font-size: 0.95rem;
 }
 
+.stat-phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+    padding: 0.6rem 1.2rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
+}
+
+.stat-phone:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 107, 0, 0.5);
+    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+}
+
+.stat-phone i {
+    font-size: 1rem;
+    animation: phoneRing 1s ease-in-out infinite;
+}
+
+@keyframes phoneRing {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    10%, 30% {
+        transform: rotate(-15deg);
+    }
+    20%, 40% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+}
+
 .scroll-indicator {
     position: absolute;
     bottom: 30px;
@@ -1571,6 +1613,15 @@ section {
         font-size: 2rem;
     }
     
+    .stat-phone {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .stat-phone i {
+        font-size: 0.9rem;
+    }
+    
     .services-grid,
     .fleet-grid,
     .references-grid,
@@ -1813,6 +1864,19 @@ section {
     /* Hero section tablet için */
     .hero-content h1 {
         font-size: 2.5rem;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+    }
+    
+    .stat {
+        flex: 0 1 auto;
+    }
+    
+    .stat-phone {
+        font-size: 0.9rem;
+        padding: 0.55rem 1.1rem;
     }
     
     /* İletişim kartları tablet için */
