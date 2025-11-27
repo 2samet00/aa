@@ -473,42 +473,6 @@ section {
     font-size: 0.95rem;
 }
 
-/* Mobile Phone Numbers - Navbar */
-.mobile-phones {
-    display: none;
-    flex-direction: column;
-    gap: 0.5rem;
-    position: absolute;
-    right: 60px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.mobile-phone-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    background: var(--primary-color);
-    color: var(--white);
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 0.85rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(255, 107, 0, 0.3);
-}
-
-.mobile-phone-link:hover {
-    background: var(--primary-dark);
-    transform: scale(1.1);
-    box-shadow: 0 4px 12px rgba(255, 107, 0, 0.5);
-}
-
-.mobile-phone-link i {
-    animation: phoneRing 2s ease-in-out infinite;
-}
-
 @keyframes phoneRing {
     0%, 100% {
         transform: rotate(0deg) scale(1);
@@ -1532,11 +1496,26 @@ section {
     }
     
     .nav-cta {
-        display: none;
+        position: static;
+        display: flex;
+        gap: 0.5rem;
+        margin-left: auto;
+        margin-right: 0.5rem;
     }
     
-    .btn-phone {
-        display: none;
+    .nav-cta .btn {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.75rem;
+    }
+    
+    .nav-cta .btn i {
+        font-size: 0.9rem;
+        margin-right: 0.3rem;
+    }
+    
+    .theme-toggle {
+        width: 36px;
+        height: 36px;
     }
     
     .hero-buttons {
@@ -1605,14 +1584,24 @@ section {
     }
     
     /* Nav CTA buttons küçük ekranlar için */
+    .nav-cta {
+        gap: 0.4rem;
+    }
+    
     .nav-cta .btn {
-        padding: 0.5rem 0.8rem;
-        font-size: 0.8rem;
+        padding: 0.45rem 0.7rem;
+        font-size: 0.75rem;
+    }
+    
+    .nav-cta .btn i {
+        font-size: 0.85rem;
+        margin-right: 0.25rem;
     }
     
     .theme-toggle {
-        width: 36px;
-        height: 36px;
+        width: 34px;
+        height: 34px;
+        font-size: 0.8rem;
     }
     
     .hero-stats {
@@ -1622,17 +1611,6 @@ section {
     
     .stat h3 {
         font-size: 2rem;
-    }
-    
-    /* Show mobile phones on mobile devices */
-    .mobile-phones {
-        display: flex;
-    }
-    
-    .mobile-phone-link {
-        width: 34px;
-        height: 34px;
-        font-size: 0.8rem;
     }
     
     .services-grid,
@@ -1801,16 +1779,6 @@ section {
     border-bottom: 1px solid #3D3D54;
 }
 
-[data-theme="dark"] .mobile-phone-link {
-    background: var(--primary-color);
-    box-shadow: 0 2px 8px rgba(255, 107, 0, 0.4);
-}
-
-[data-theme="dark"] .mobile-phone-link:hover {
-    background: var(--primary-dark);
-    box-shadow: 0 4px 12px rgba(255, 107, 0, 0.6);
-}
-
 /* Koyu temada mobile menü için arka plan */
 @media (max-width: 768px) {
     [data-theme="dark"] .nav-menu {
@@ -1895,17 +1863,6 @@ section {
     
     .stat {
         flex: 0 1 auto;
-    }
-    
-    /* Show mobile phones on tablet */
-    .mobile-phones {
-        display: flex;
-        right: 70px;
-    }
-    
-    .mobile-phone-link {
-        width: 38px;
-        height: 38px;
     }
     
     /* İletişim kartları tablet için */
