@@ -1,19 +1,12 @@
 # robots.txt - Bağoğlu Hafriyat
-# Bu dosya arama motorlarına hangi sayfaların taranacağını söyler
 
-# Tüm arama motorlarına izin ver
 User-agent: *
 Allow: /
 
 # Sitemap konumu
-Sitemap: https://www.bagogluhafriyat.com/sitemap.xml
+Sitemap: https://ankarakanalkiralikkepce.com/sitemap.xml
 
-# Taranmaması gereken alanlar (varsa)
-# Disallow: /admin/
-# Disallow: /private/
 
-# Crawl delay (isteğe bağlı - saniye cinsinden)
-# Crawl-delay: 10
 
 
 

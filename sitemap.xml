@@ -1,71 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   
   <!-- Ana Sayfa -->
   <url>
-    <loc>https://www.bagogluhafriyat.com/</loc>
-    <lastmod>2024-11-26</lastmod>
+    <loc>https://ankarakanalkiralikkepce.com/</loc>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <!-- Hakkımızda -->
   <url>
-    <loc>https://www.bagogluhafriyat.com/hakkimizda.html</loc>
-    <lastmod>2024-11-26</lastmod>
+    <loc>https://ankarakanalkiralikkepce.com/hakkimizda.html</loc>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Hizmetler -->
   <url>
-    <loc>https://www.bagogluhafriyat.com/hizmetler.html</loc>
-    <lastmod>2024-11-26</lastmod>
+    <loc>https://ankarakanalkiralikkepce.com/hizmetler.html</loc>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <!-- Beko Loder Kiralama -->
   <url>
-    <loc>https://www.bagogluhafriyat.com/beko-loder-kiralama.html</loc>
-    <lastmod>2024-11-26</lastmod>
+    <loc>https://ankarakanalkiralikkepce.com/beko-loder-kiralama.html</loc>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <!-- Mini Kepçe Kiralama -->
   <url>
-    <loc>https://www.bagogluhafriyat.com/mini-kepce-kiralama.html</loc>
-    <lastmod>2024-11-26</lastmod>
+    <loc>https://ankarakanalkiralikkepce.com/mini-kepce-kiralama.html</loc>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <!-- Ekskavatör Kiralama -->
   <url>
-    <loc>https://www.bagogluhafriyat.com/ekskavotor-kiralama.html</loc>
-    <lastmod>2024-11-26</lastmod>
+    <loc>https://ankarakanalkiralikkepce.com/ekskavotor-kiralama.html</loc>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <!-- Kamyon Kiralama -->
   <url>
-    <loc>https://www.bagogluhafriyat.com/kamyon-kiralama.html</loc>
-    <lastmod>2024-11-26</lastmod>
+    <loc>https://ankarakanalkiralikkepce.com/kamyon-kiralama.html</loc>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <!-- İletişim -->
   <url>
-    <loc>https://www.bagogluhafriyat.com/iletisim.html</loc>
-    <lastmod>2024-11-26</lastmod>
+    <loc>https://ankarakanalkiralikkepce.com/iletisim.html</loc>
+    <lastmod>2025-12-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
+  <!-- Gizlilik Politikası -->
+  <url>
+    <loc>https://ankarakanalkiralikkepce.com/gizlilik-politikasi.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <!-- Kullanım Koşulları -->
+  <url>
+    <loc>https://ankarakanalkiralikkepce.com/kullanim-kosullari.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <!-- KVKK -->
+  <url>
+    <loc>https://ankarakanalkiralikkepce.com/kvkk.html</loc>
+    <lastmod>2025-11-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
 </urlset>
+
+
+
 
 
 
