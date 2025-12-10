@@ -68,6 +68,22 @@
     <priority>0.7</priority>
   </url>
   
+  <!-- Kiralık Kepçe Ankara -->
+  <url>
+    <loc>https://ankarakanalkiralikkepce.com/kiralik-kepce-ankara.html</loc>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Kanal Açma Hizmeti -->
+  <url>
+    <loc>https://ankarakanalkiralikkepce.com/kanal-acma-hizmeti.html</loc>
+    <lastmod>2025-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
   <!-- Gizlilik Politikası -->
   <url>
     <loc>https://ankarakanalkiralikkepce.com/gizlilik-politikasi.html</loc>
