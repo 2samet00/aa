@@ -1,4 +1,4 @@
-name = "bagoglu-hafriyat"
+name = "website"
 compatibility_date = "2025-11-27"
 main = "./_worker.js"
 
