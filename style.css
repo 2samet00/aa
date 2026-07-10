@@ -398,6 +398,16 @@ section {
     background: var(--primary-light);
 }
 
+.btn-dark {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background: var(--secondary-light);
+    transform: translateY(-2px);
+}
+
 .btn-lg {
     padding: 1rem 2rem;
     font-size: 1.1rem;
@@ -673,6 +683,72 @@ section {
 
 .service-link:hover {
     gap: var(--spacing-sm);
+}
+
+/* ===== Numaralı Hizmet Kartları (referans) ===== */
+.svc-card {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+}
+
+.svc-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.svc-num {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: 0.05em;
+}
+
+.svc-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.svc-card > p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-gray);
+    margin: 0;
+}
+
+.svc-bullets {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 4px 0 0;
+    padding: 0;
+}
+
+.svc-bullets li {
+    font-size: 0.9rem;
+    color: #333;
+    display: flex;
+    gap: 8px;
+}
+
+.svc-bullets li::before {
+    content: '—';
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.svc-card .btn {
+    margin-top: auto;
+    width: 100%;
+    justify-content: center;
 }
 
 /* ===== About Section ===== */
