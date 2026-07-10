@@ -5,35 +5,35 @@
 
 /* ===== CSS Variables ===== */
 :root {
-    /* Primary Colors */
-    --primary-color: #FFC400;
-    --primary-dark: #E0A800;
-    --primary-light: #FFD633;
+    /* Primary Colors - amber */
+    --primary-color: #F2A61C;
+    --primary-dark: #C9860A;
+    --primary-light: #F5B84A;
 
-    /* Secondary Colors - endüstriyel siyah */
-    --secondary-color: #0E0F12;
-    --secondary-light: #1A1C21;
+    /* Secondary Colors - mürekkep siyahı */
+    --secondary-color: #1B1B1B;
+    --secondary-light: #24272A;
 
     /* Accent Colors */
-    --accent-color: #FFC400;
+    --accent-color: #F2A61C;
     --whatsapp-color: #25D366;
-    --success-color: #22C55E;
+    --success-color: #F2A61C;
 
     /* Neutral Colors */
-    --text-dark: #1A1C21;
-    --text-gray: #5A5E66;
-    --border-color: #E2E3E6;
-    --bg-light: #F3F3F1;
+    --text-dark: #1B1B1B;
+    --text-gray: #4A4A4A;
+    --border-color: #E4DFD4;
+    --bg-light: #F0EEE8;
+    --bg-cream: #F6F4EF;
     --white: #FFFFFF;
 
-    /* Endüstriyel degradeler + hazard */
-    --grad-primary: linear-gradient(135deg, #FFD633 0%, #FFC400 55%, #E0A800 100%);
-    --grad-navy: linear-gradient(135deg, #16181D 0%, #0E0F12 100%);
-    --hazard: repeating-linear-gradient(-45deg, #FFC400 0 14px, #0E0F12 14px 28px);
+    /* Degradeler */
+    --grad-primary: linear-gradient(135deg, #F5B84A 0%, #F2A61C 55%, #C9860A 100%);
+    --grad-navy: linear-gradient(135deg, #24272A 0%, #1B1B1B 100%);
 
     /* Typography */
-    --font-body: 'Inter', sans-serif;
-    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Work Sans', sans-serif;
+    --font-heading: 'Oswald', sans-serif;
 
     /* Spacing */
     --spacing-xs: 0.5rem;
@@ -93,7 +93,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
-    background-color: var(--white);
+    background-color: var(--bg-cream);
     transition: background-color var(--transition-normal);
     opacity: 1 !important;
 }
@@ -101,15 +101,16 @@ body {
 /* ===== Typography ===== */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
-    font-weight: 800;
+    font-weight: 700;
     line-height: 1.1;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
     color: var(--secondary-color);
 }
 
-h1, h2 { text-transform: uppercase; }
-h1 { font-size: clamp(2.4rem, 6vw, 4.4rem); font-weight: 900; letter-spacing: -0.03em; line-height: 1.02; }
-h2 { font-size: clamp(1.9rem, 4.5vw, 2.9rem); font-weight: 900; }
+h1 { font-size: clamp(2.2rem, 5vw, 3.75rem); line-height: 1.05; }
+h2 { font-size: clamp(1.7rem, 4vw, 2.35rem); }
+h3 { font-size: clamp(1.2rem, 3vw, 1.5rem); }
 h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
 h4 { font-size: 1.25rem; }
 h5 { font-size: 1.125rem; }
@@ -156,24 +157,18 @@ section {
 .section-badge {
     display: inline-flex;
     align-items: center;
-    gap: 0.6rem;
-    padding: 0.5rem 1rem 0.5rem 0.75rem;
-    background: var(--secondary-color);
-    color: var(--primary-color);
+    gap: 0.5rem;
+    padding: 0.5rem 1.1rem;
+    background: rgba(242, 166, 28, 0.12);
+    color: var(--primary-dark);
+    border: 1px solid var(--primary-color);
     border-radius: 2px;
+    font-family: var(--font-heading);
     font-size: 0.78rem;
-    font-weight: 800;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.1em;
     margin-bottom: var(--spacing-md);
-}
-
-.section-badge::before {
-    content: '';
-    width: 14px;
-    height: 14px;
-    background: var(--hazard);
-    background-size: 6px 6px;
 }
 
 .section-title {
@@ -198,16 +193,13 @@ section {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.82);
-    backdrop-filter: saturate(180%) blur(14px);
-    -webkit-backdrop-filter: saturate(180%) blur(14px);
-    border-bottom: 1px solid rgba(15, 42, 71, 0.06);
+    background: var(--secondary-color);
+    border-bottom: 3px solid var(--primary-color);
     transition: all var(--transition-normal);
 }
 
 .header.scrolled {
-    background: rgba(255, 255, 255, 0.94);
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
 .navbar {
@@ -240,16 +232,16 @@ section {
 }
 
 .brand-text h2 {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     line-height: 1.05;
-    color: var(--secondary-color);
-    font-weight: 900;
-    letter-spacing: -0.01em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.02em;
 }
 
 .brand-text h2 span,
 .brand-text .accent {
-    color: var(--primary-dark);
+    color: var(--primary-color);
 }
 
 .nav-menu {
@@ -261,11 +253,18 @@ section {
 }
 
 .nav-link {
-    font-weight: 500;
-    color: var(--text-dark);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #fff;
     position: relative;
     padding: var(--spacing-xs) 0;
 }
+
+.nav-link:hover { color: var(--primary-color); }
+.nav-link.active { color: var(--primary-color); }
 
 .nav-link::after {
     content: '';
@@ -292,7 +291,7 @@ section {
 
 .theme-toggle {
     background: none;
-    border: 2px solid var(--border-color);
+    border: 2px solid rgba(255, 255, 255, 0.25);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -300,13 +299,13 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-dark);
+    color: #fff;
     transition: all var(--transition-fast);
 }
 
 .theme-toggle:hover {
     background: var(--primary-color);
-    color: var(--white);
+    color: var(--secondary-color);
     border-color: var(--primary-color);
 }
 
@@ -322,7 +321,7 @@ section {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: var(--secondary-color);
+    background: #fff;
     border-radius: 3px;
     transition: all var(--transition-normal);
 }
@@ -391,12 +390,12 @@ section {
 }
 
 .btn-phone {
-    background: var(--secondary-color);
-    color: var(--white);
+    background: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .btn-phone:hover {
-    background: var(--secondary-light);
+    background: var(--primary-light);
 }
 
 .btn-lg {
@@ -475,25 +474,17 @@ section {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem 1.2rem;
-    background: rgba(255, 255, 255, 0.10);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    color: #FFFFFF;
-    border-radius: 50px;
-    font-size: 0.85rem;
+    padding: 0.5rem 1.1rem;
+    background: rgba(242, 166, 28, 0.14);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 2px;
+    font-family: var(--font-heading);
+    font-size: 0.82rem;
     font-weight: 600;
-    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
     margin-bottom: var(--spacing-md);
-    backdrop-filter: blur(10px);
-}
-
-.hero-badge::before {
-    content: '';
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: var(--primary-color);
-    box-shadow: 0 0 10px 2px rgba(255, 196, 0, 0.7);
 }
 
 .hero-title {
@@ -608,9 +599,9 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    height: 3px;
-    background: var(--grad-primary);
-    transform: scaleX(0);
+    height: 4px;
+    background: var(--primary-color);
+    transform: scaleX(1);
     transform-origin: left;
     transition: transform var(--transition-normal);
 }
@@ -1371,19 +1362,21 @@ section {
 .cta-band {
     position: relative;
     overflow: hidden;
-    background: var(--grad-navy);
+    background: var(--secondary-color);
     padding: 5rem 0;
     text-align: center;
-    color: var(--white);
+    color: #fff;
 }
 
 .cta-band::before {
     content: '';
     position: absolute;
-    inset: 0;
-    background:
-        radial-gradient(circle at 15% 120%, rgba(255, 196, 0, 0.28) 0%, transparent 55%),
-        radial-gradient(circle at 85% -20%, rgba(255, 196, 0, 0.18) 0%, transparent 55%);
+    right: -60px;
+    top: -60px;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: rgba(242, 166, 28, 0.08);
     pointer-events: none;
 }
 
@@ -1393,27 +1386,19 @@ section {
 }
 
 .cta-band h2 {
-    color: var(--white);
+    color: #fff;
+}
+
+.cta-band p {
+    color: #B8B5AE;
 }
 
 /* ===== Footer ===== */
 .footer {
-    background: var(--grad-navy);
-    color: var(--white);
-    padding: calc(var(--spacing-xxl) + 8px) 0 var(--spacing-md);
-    border-top: none;
+    background: #0F0F0F;
+    color: #fff;
+    padding: var(--spacing-xxl) 0 var(--spacing-md);
     position: relative;
-}
-
-.footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 8px;
-    background: var(--hazard);
-    background-size: 22px 22px;
 }
 
 .footer-content {
@@ -1466,7 +1451,9 @@ section {
 }
 
 .footer-col h4 {
-    color: var(--white);
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
     margin-bottom: var(--spacing-md);
 }
 
@@ -1635,7 +1622,7 @@ section {
         width: 100%;
         max-width: 100%;
         height: calc(100vh - 80px);
-        background: var(--white);
+        background: var(--secondary-color);
         flex-direction: column;
         padding: var(--spacing-lg);
         box-shadow: var(--shadow-lg);
